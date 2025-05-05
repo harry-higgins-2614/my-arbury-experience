@@ -1,200 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Arbury Review – My Experience with Their After Sales Care & Warranty Support</title>
-  <meta name="description" content="An honest review of my experience with Arbury Motor Group – from vehicle purchase to poor after sales care and warranty issues with SPOTiCAR.">
-  <meta property="og:title" content="Arbury Review – After Sales and Warranty Experience">
-  <meta property="og:description" content="My real-life experience with Arbury Motor Group, including delays, vehicle damage, and warranty support struggles.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://myarburyexperience.co.uk">
-  <meta property="og:site_name" content="My Arbury Experience">
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Arbury Experience – Warranty Issues & Customer Story</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arbury Review: My Experience with After Sales Care & Warranty Support</title>
   <style>
-  /* modern-styles.css */
+    /* Import Google Font */
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
-/* Import Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+    /* Reset & Base Styles */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-/* Reset & Base Styles */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+    html {
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+      /* Prevent header overlap on in-page links */
+      scroll-padding-top: 8rem;
+    }
 
-html {
-  font-family: 'Inter', sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
-  scroll-behavior: smooth;
-}
+    body {
+      background-color: #ffffff;
+      color: #333333;
+      margin: 0;
+      padding: 0;
+    }
 
-body {
-  background-color: #ffffff;
-  color: #333333;
-  padding: 1rem;
-}
+    /* Layout Container */
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
 
-main {
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 1rem;
-}
+    /* Header */
+    header {
+      position: sticky;
+      top: 0;
+      background-color: #005f99;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+    header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+    }
+    header .logo {
+      color: #ffffff;
+      font-size: 1.5rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    header nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+    header nav ul li a {
+      color: #ffffff;
+      font-weight: 500;
+      text-decoration: none;
+      transition: opacity 0.3s ease;
+    }
+    header nav ul li a:hover {
+      opacity: 0.8;
+    }
 
-/* Headings */
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: #005f99;
-}
-h2 {
-  font-size: 1.75rem;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  color: #005f99;
-  border-bottom: 2px solid #e0e0e0;
-  padding-bottom: 0.25rem;
-}
+    /* Hero / Intro Section */
+    .intro {
+      width: 100%;
+      margin: 3rem 0;
+      padding: 2rem;
+      background-color: #f0f4f8;
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    }
+    .intro-title {
+      font-size: 2rem;
+      font-weight: 600;
+      color: #005f99;
+      margin-bottom: 1rem;
+      line-height: 1.3;
+    }
+    .intro p {
+      font-size: 1.125rem;
+      color: #444444;
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
 
-/* Text & Lists */
-p {
-  margin-bottom: 1rem;
-}
-ul,
-ol {
-  margin: 1rem 0 1rem 1.5rem;
-}
-li {
-  margin-bottom: 0.5rem;
-}
+    /* Main Content */
+    main {
+      margin: 2rem 0;
+    }
 
-/* Links */
-a {
-  color: #005f99;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-a:hover {
-  color: #003f66;
-  text-decoration: underline;
-}
+    /* Ensure sections scroll into view below header */
+    section {
+      scroll-margin-top: 8rem;
+    }
 
-/* Blockquotes */
-blockquote {
-  margin: 1rem 0;
-  padding: 0.75rem 1rem;
-  background-color: #f9f9f9;
-  border-left: 4px solid #005f99;
-  color: #555555;
-}
+    /* Section Headings */
+    h1, h2 {
+      color: #005f99;
+      margin: 2rem 0 1rem;
+      text-align: left;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    h2 {
+      font-size: 1.75rem;
+      border-bottom: 2px solid #e0e0e0;
+      padding-bottom: 0.25rem;
+    }
 
-/* Images */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 1rem 0;
-}
+    /* Text & Lists */
+    p {
+      margin-bottom: 1rem;
+    }
+    ul, ol {
+      margin: 1rem 0 1rem 1.5rem;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
 
-/* Footer */
-footer {
-  text-align: center;
-  margin-top: 3rem;
-  padding-top: 2rem;
-  border-top: 1px solid #e0e0e0;
-  font-size: 0.875rem;
-  color: #777777;
-}
+    /* Links */
+    a {
+      color: #005f99;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    a:hover {
+      color: #003f66;
+      text-decoration: underline;
+    }
 
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem 0;
+      border-top: 1px solid #e0e0e0;
+      font-size: 0.875rem;
+      color: #777777;
+    }
   </style>
 </head>
 <body>
- <header>
-  <h1>Arbury Review: My Experience with After Sales Care and Warranty Support</h1>
-  <p>
-    A personal and factual account of my experience with Arbury Motor Group — from buying a used Vauxhall Zafira Tourer, to issues with aftersales support, warranty handling, and vehicle breakdowns.
-  </p>
-</header>
-  <main>
-    <section>
-      <h2>Summary of Issues</h2>
+  <header>
+    <div class="container">
+      <a href="/" class="logo">My Arbury Experience</a>
+      <nav>
+        <ul>
+          <li><a href="#summary">Summary</a></li>
+          <li><a href="#timeline">Timeline</a></li>
+          <li><a href="#concerns">Concerns</a></li>
+          <li><a href="#ask">What I&rsquo;m Asking For</a></li>
+          <li><a href="#disclaimer">Disclaimer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <h1 class="intro-title">My Arbury Experience</h1>
+      <p>In February 2024, I purchased a used Vauxhall Zafira Tourer from Arbury Motor Group in Walsall. Alongside the vehicle, I was sold an extended warranty (SPOTiCAR Extended Warranty), which was presented as offering peace of mind for unexpected major repair costs.</p>
+      <p>This website documents my journey — from significant mechanical issues and poor communication to my efforts to find a fair resolution.</p>
+    </section>
+
+    <section id="summary">
+      <h1>Summary of Issues</h1>
       <ul>
         <li>Car delivery was delayed unexpectedly, causing inconvenience and additional travel costs.</li>
         <li>Vehicle was delivered with visible damage that was initially denied by the salesperson.</li>
         <li>Mechanical faults appeared within 12 months, including a critical timing chain issue.</li>
         <li>Car became undrivable and broke down in traffic, requiring police intervention.</li>
-        <li>Arbury and Spoticar have not provided adequate support to resolve the issue under warranty.</li>
+        <li>Arbury and SPOTiCAR have not provided adequate support to resolve the issue under warranty.</li>
         <li>Customer has been left without a usable vehicle since March 2025.</li>
       </ul>
     </section>
 
-    <section>
-      <h2>Introduction</h2>
-      <p>
-        In February 2024, I purchased a used Vauxhall Zafira Tourer from Arbury Motor Group in Walsall. Alongside the vehicle, I was sold an extended warranty (SPOTiCAR Extended Warranty), which was presented as offering peace of mind for unexpected major repair costs.
-      </p>
-      <p>
-        This website documents my experience since that purchase — including significant mechanical issues, poor communication, and my attempts to resolve the situation fairly through Arbury.
-      </p>
-    </section>
-
-    <div class="section-divider"></div>
-    <section>
-      <h2>Buying Experience</h2>
-      <ul>
-        <li><strong>February 2024:</strong> I arrived to collect the car but was told it wasn’t ready. The vehicle was eventually delivered to me a week later, resulting in lost time, additional fuel costs, and frustration.</li>
-        <li><strong>February 2024 (Delivery Day):</strong> Upon delivery, I was not asked to inspect the vehicle. The following morning, I discovered a muddy scrape on the rear driver’s side bumper after moving the car only a few feet. The salesperson initially denied responsibility, suggesting it was a bicycle, despite no evidence. The repair was only agreed to after I requested to escalate the matter to the Sales Manager.</li>
-      </ul>
-    </section>
-
-    <div class="section-divider"></div>
-    <section>
+    <section id="timeline">
       <h2>Timeline of Mechanical Issues</h2>
       <ul>
         <li><strong>20 Feb 2025:</strong> Vehicle fails MOT at Arbury due to engine light. Returned to me with light off.</li>
         <li><strong>22 Feb 2025:</strong> Vehicle passes MOT at a different garage.</li>
         <li><strong>Late Feb – March 2025:</strong> Engine light intermittently returns. I limit use and arrange a diagnostic.</li>
         <li><strong>20 Mar 2025:</strong> Independent diagnostic reveals timing chain and clutch issues. Advised vehicle is unsafe to drive.</li>
-        <li><strong>29 Mar 2025:</strong> Vehicle breaks down after a hospital appointment. Police attend. Recovery via friend’s service.</li>
+        <li><strong>29 Mar 2025:</strong> Vehicle breaks down after a hospital appointment. Police attend. Recovery via friend&rsquo;s service.</li>
         <li><strong>10 Apr 2025:</strong> Contacted Arbury to initiate warranty support.</li>
         <li><strong>April–May 2025:</strong> Car remains undrivable. Ongoing delays, limited support offered, recovery and diagnostics still not fully covered.</li>
       </ul>
     </section>
 
-    <section>
+    <section id="concerns">
       <h2>Concerns Raised</h2>
       <ul>
         <li>Lack of meaningful communication for weeks despite a serious issue.</li>
         <li>No support offered for vehicle recovery despite the car being undrivable.</li>
-        <li>Potential for high diagnostic costs — even though I’ve already paid for a third-party diagnostic.</li>
+        <li>Potential for high diagnostic costs — even though I&rsquo;ve already paid for a third-party diagnostic.</li>
         <li>Warranty sold as peace of mind but now creating financial uncertainty before support is even confirmed.</li>
         <li>Early sales process raised red flags, including unexplained delivery damage and resistance to resolving it.</li>
       </ul>
     </section>
 
-<section>
-  <h2>What I’m Asking For</h2>
-  <ul>
-    <li>That Arbury covers the cost of recovery, or arranges it without charge, given the condition and circumstances.</li>
-    <li>That no diagnostic charges are passed to me, whether the repair is deemed valid under warranty or not.</li>
-    <li>That the full cost of any repair related to this fault is covered either under the warranty or by Arbury — I do not believe it is fair or acceptable for me to bear any repair costs in these circumstances.</li>
-  </ul>
-</section>
+    <section id="ask">
+      <h2>What I&rsquo;m Asking For</h2>
+      <ul>
+        <li>That Arbury covers the cost of recovery, or arranges it without charge, given the condition and circumstances.</li>
+        <li>That no diagnostic charges are passed to me, whether the repair is deemed valid under warranty or not.</li>
+        <li>That the full cost of any repair related to this fault is covered either under the warranty or by Arbury — I do not believe it is fair or acceptable for me to bear any repair costs in these circumstances.</li>
+      </ul>
+    </section>
 
-    <section>
+    <section id="disclaimer">
       <h2>Disclaimer</h2>
-      <p>
-        This website is a factual account of my personal experience with Arbury Motor Group and the SPOTiCAR Extended Warranty. It includes opinions based on documented correspondence and actual events. I welcome any correction or clarification from Arbury if any information is inaccurate. This is not an attempt to defame, but to inform others and seek accountability.
-      </p>
-      <p>
-        To get in touch regarding this content, please email: <a href="mailto:higginsharry95+arbury@gmail.com">higginsharry95+arbury@gmail.com</a>
-      </p>
+      <p>This website is a factual account of my personal experience with Arbury Motor Group and the SPOTiCAR Extended Warranty. It includes opinions based on documented correspondence and actual events. I welcome any correction or clarification from Arbury if any information is inaccurate. This is not an attempt to defame, but to inform others and seek accountability.</p>
+      <p>To get in touch regarding this content, please <a href="mailto:higginsharry95+arbury@gmail.com">email me</a>.</p>
     </section>
   </main>
+
   <footer>
     &copy; 2025 My Arbury Experience. All rights reserved.
   </footer>
